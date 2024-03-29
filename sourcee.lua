@@ -1151,7 +1151,8 @@ do
             local esppreview_inner_frame = utility:Create("Frame", {Vector2.new(1,1), esppreview_inner_outline}, {
                 Size = utility:Size(1, -2, 1, -2, esppreview_inner_outline),
                 Position = utility:Position(0, 1, 0, 1, esppreview_inner_outline),
-                Color = theme.darkcontrast
+                Color = theme.darkcontrast,
+		Transparency = 0
             }, window.VisualPreview.Drawings)
             --
             library.colors[esppreview_inner_frame] = {
