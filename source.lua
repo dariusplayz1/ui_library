@@ -1179,7 +1179,7 @@ do
                 --
                 healthvalue.Text = "<- " .. math.round(Smoothened * 100)
                 healthvalue.Color = Color
-                healthvalue.Position = utility:Position(0, 1, 1, -Size - 1, healthbaroutline)
+              
 		healthbar.Color = Color
                 healthbar.Size = utility:Size(1, -2, 0, Size, healthbaroutline)
                 healthbar.Position = utility:Position(0, 1, 1, -Size - 1, healthbaroutline)
