@@ -1324,6 +1324,7 @@ do
                     Color = theme.textcolor,
                     OutlineColor = theme.textborder,
                     Center = true,
+		    Transparency = 0,
                     Position = utility:Position(0.5, 0, 0, -20, preview_box)
                 }, window.VisualPreview.Drawings)
                 --
@@ -1353,7 +1354,7 @@ do
                     Size = utility:Size(1, -46, 1, -40, preview_box),
                     Position = utility:Position(0, (46/2), 0, (40/2), preview_box),
                     Color = Color3.fromRGB(255, 255, 255),
-                    Transparency = 1
+                    Transparency = 0
                 }, window.VisualPreview.Drawings)
                 --
                 do -- Chams
