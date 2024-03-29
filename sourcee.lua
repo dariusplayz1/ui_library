@@ -1177,7 +1177,7 @@ do
                 local Size = (healthbaroutline.Size.Y - 2) * Smoothened
                 local Color = ColorLerp(Smoothened, window.VisualPreview.Color1, window.VisualPreview.Color2)
                 --
-                healthvalue.Text = "<- " .. math.round(Smoothened * 100)
+                healthvalue.Text = "  <- " .. math.round(Smoothened * 100)
                 healthvalue.Color = Color
                 healthvalue.Position = utility:Position(0, 1, 1, -Size - 1, healthbaroutline)
 				
@@ -1501,7 +1501,7 @@ do
                 }, window.VisualPreview.Drawings)
                 --
                 local preview_flags = utility:Create("TextLabel", {Vector2.new(preview_box.Size.X -56, 5), preview_box}, {
-                    Text = "Flags ->", --Display\nMoving\nJumping\nDesynced"
+                    Text = "  Flags ->", --Display\nMoving\nJumping\nDesynced"
                     Size = theme.textsize,
                     Font = theme.font,
                     Color = Color3.fromRGB(255, 255, 255),
