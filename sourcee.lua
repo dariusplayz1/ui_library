@@ -4375,7 +4375,7 @@ do
                 Color = "textcolor"
             }
             --
-            utility:LoadImage(keybind__gradient, "gradient", "")
+
             --
             function keybind:Shorten(string)
                 for i,v in pairs(shortenedInputs) do
@@ -4593,7 +4593,7 @@ do
                             Visible = page.open
                         }, keybind.modemenu.drawings)
                         --
-                        utility:LoadImage(keybind__gradient, "gradient", "")
+   
                         --
                         for i,v in pairs({"Always", "Toggle", "On Hold", "Off Hold"}) do
                             local button_title = utility:Create("TextLabel", {Vector2.new(modemenu_frame.Size.X/2,15 * (i-1)), modemenu_frame}, {
@@ -5937,7 +5937,7 @@ do
             Color = "textcolor"
         }
         --
-        utility:LoadImage(keybind__gradient, "gradient", "")
+
         --
         function keybind:Shorten(string)
             for i,v in pairs(shortenedInputs) do
@@ -6151,7 +6151,7 @@ do
                         Visible = page.open
                     }, keybind.modemenu.drawings)
                     --
-                    utility:LoadImage(keybind__gradient, "gradient", "")
+          
                     --
                     for i,v in pairs({"Always", "Toggle", "On Hold", "Off Hold"}) do
                         local button_title = utility:Create("TextLabel", {Vector2.new(modemenu_frame.Size.X/2,15 * (i-1)), modemenu_frame}, {
