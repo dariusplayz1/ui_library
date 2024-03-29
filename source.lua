@@ -3465,7 +3465,7 @@ do
                 window.currentContent.button = button
             end
             --
-            utility:LoadImage(button_gradient, "gradient", "")
+          
             --
             library.began[#library.began + 1] = function(Input)
                 if Input.UserInputType == Enum.UserInputType.MouseButton1 and (button_outline.Visible or button.open) and window.isVisible then
@@ -3514,7 +3514,7 @@ do
             playerList.buttons[#playerList.buttons + 1] = button
         end
         --
-        utility:LoadImage(list_gradient, "gradient", "")
+ 
         --
         function playerList:GetSelection()
             for Index, Value in pairs(playerList.players) do
@@ -3786,7 +3786,7 @@ do
             Color = "textcolor"
         }
         --
-        utility:LoadImage(toggle__gradient, "gradient", "")
+
         --
         function toggle:Get()
             return toggle.current
@@ -3909,7 +3909,7 @@ do
             if transp then
                 utility:LoadImage(colorpicker__transparency, "cptransp", "https://i.imgur.com/IIPee2A.png")
             end
-            utility:LoadImage(colorpicker__gradient, "gradient", "")
+
             --
             function colorpicker:Set(color, transp_val)
                 if typeof(color) == "table" then
@@ -4755,7 +4755,7 @@ do
             Color = "textcolor"
         }
         --
-        utility:LoadImage(slider__gradient, "gradient", "")
+
         --
         function slider:Set(value)
             local oldval = slider.current
@@ -4882,7 +4882,7 @@ do
             Color = "textcolor"
         }
         --
-        utility:LoadImage(button_gradient, "gradient", "")
+
         --
         library.began[#library.began + 1] = function(Input)
             if Input.UserInputType == Enum.UserInputType.MouseButton1 and button_outline.Visible and window.isVisible and utility:MouseOverDrawing({section.section_frame.Position.X, section.section_frame.Position.Y + button.axis, section.section_frame.Position.X + section.section_frame.Size.X, section.section_frame.Position.Y + button.axis + 20}) and not window:IsOverContent() then
@@ -4990,7 +4990,7 @@ do
             Color = textbox.current == "" and (placeholder and "textdark") or "textcolor"
         }
         --
-        utility:LoadImage(textbox_gradient, "gradient", "")
+
         --
         function textbox:Get()
             return textbox.current
@@ -5022,7 +5022,7 @@ do
                         --
                         task.wait(0.15)
                         --
-                        utility:LoadImage(textbox_gradient, "gradient", "") 
+             
                     end)
                     --
                     if not (window.currentContent.textbox and window.currentContent.textbox.Name == identifier) then
@@ -5088,7 +5088,7 @@ do
                             Color = textbox.current == "" and (placeholder and "textdark") or "textcolor"
                         }
                         --
-                        utility:LoadImage(textbox_gradient, "gradient", "")
+       
                     end)
                     --
                     setclipboard(textbox.current)
@@ -5178,7 +5178,7 @@ do
                 Color = "textcolor"
             }
             --
-            utility:LoadImage(button_gradient, "gradient", "")
+
             --
             library.began[#library.began + 1] = function(Input)
                 if Input.UserInputType == Enum.UserInputType.MouseButton1 and button_outline.Visible and window.isVisible and utility:MouseOverDrawing({section.section_frame.Position.X + (i == 2 and (section.section_frame.Size.X/2) or 0), section.section_frame.Position.Y + button.axis, section.section_frame.Position.X + section.section_frame.Size.X - (i == 1 and (section.section_frame.Size.X/2) or 0), section.section_frame.Position.Y + button.axis + 20}) and not window:IsOverContent() then
@@ -5292,7 +5292,7 @@ do
         }, section.visibleContent);dropdown["dropdown_image"] = dropdown_image
         --
         utility:LoadImage(dropdown_image, "arrow_down", "https://i.imgur.com/tVqy0nL.png")
-        utility:LoadImage(dropdown__gradient, "gradient", "")
+
         --
         if max then
             local lastupdate = dropdown.scrollindex
@@ -5369,7 +5369,7 @@ do
                         --
                         task.wait(0.15)
                         --
-                        utility:LoadImage(dropdown__gradient, "gradient", "") 
+    
                     end)
                     --
                     if not dropdown.open then
@@ -5643,7 +5643,7 @@ do
         }, section.visibleContent);multibox["multibox_image"] = multibox_image
         --
         utility:LoadImage(multibox_image, "arrow_down", "https://i.imgur.com/tVqy0nL.png")
-        utility:LoadImage(multibox__gradient, "gradient", "")
+
         --
         function multibox:Update()
             if multibox.open and multibox.holder.inline then
@@ -5720,7 +5720,7 @@ do
                         --
                         task.wait(0.15)
                         --
-                        utility:LoadImage(multibox__gradient, "gradient", "") 
+
                     end)
                     --
                     if not multibox.open then
@@ -6286,7 +6286,7 @@ do
         if transp then
             utility:LoadImage(colorpicker__transparency, "cptransp", "https://i.imgur.com/IIPee2A.png")
         end
-        utility:LoadImage(colorpicker__gradient, "gradient", "")
+
         --
         function colorpicker:Set(color, transp_val)
             if typeof(color) == "table" then
@@ -6730,7 +6730,7 @@ do
             if transp then
                 utility:LoadImage(colorpicker__transparency, "cptransp", "https://i.imgur.com/IIPee2A.png")
             end
-            utility:LoadImage(colorpicker__gradient, "gradient", "")
+     
             --
             function colorpicker:Set(color, transp_val)
                 if typeof(color) == "table" then
@@ -7209,7 +7209,7 @@ do
             list.buttons[i] = config_title
         end
         --
-        utility:LoadImage(list_gradient, "gradient", "")
+
         --
         function list:UpdateScroll()
             if (#list.options - list.max) > 0 then
