@@ -1140,7 +1140,8 @@ do
             local esppreview_inner_outline = utility:Create("Frame", {Vector2.new(1,1), esppreview_inner_inline}, {
                 Size = utility:Size(1, -2, 1, -2, esppreview_inner_inline),
                 Position = utility:Position(0, 1, 0, 1, esppreview_inner_inline),
-                Color = theme.outline
+                Color = theme.outline,
+					
             }, window.VisualPreview.Drawings)
             --
             library.colors[esppreview_inner_outline] = {
@@ -1287,7 +1288,8 @@ do
                     Position = utility:Position(1, -(BoxSize.X - 1), 0, 20, esppreview_frame_previewbox),
                     Color = Color3.fromRGB(0, 0, 0),
                     Filled = false,
-                    Thickness = 2.5
+                    Thickness = 2.5,
+		    Transparency = 0
                 }, window.VisualPreview.Drawings);boxoutline = preview_boxoutline
                 --
                 local preview_box = utility:Create("Frame", {Vector2.new(0, 0), preview_boxoutline}, {
@@ -1295,7 +1297,8 @@ do
                     Position = utility:Position(0, 0, 0, 0, preview_boxoutline),
                     Color = Color3.fromRGB(255, 255, 255),
                     Filled = false,
-                    Thickness = 0.6
+                    Thickness = 0.6,
+		    Transparency = 0
                 }, window.VisualPreview.Drawings)
                 --
                 local preview_heatlhbaroutline = utility:Create("Frame", {Vector2.new(-6, -1), preview_boxoutline}, {
@@ -1331,6 +1334,7 @@ do
                     Color = theme.textcolor,
                     OutlineColor = theme.textborder,
                     Center = true,
+		    Transparency = 0,
                     Position = utility:Position(0.5, 0, 1, 5, preview_box)
                 }, window.VisualPreview.Drawings)
                 --
@@ -1341,6 +1345,7 @@ do
                     Color = theme.textcolor,
                     OutlineColor = theme.textborder,
                     Center = true,
+		    Transparency = 0,
                     Position = utility:Position(0.5, 0, 1, 20, preview_box)
                 }, window.VisualPreview.Drawings)
                 --
@@ -1348,7 +1353,7 @@ do
                     Size = utility:Size(1, -46, 1, -40, preview_box),
                     Position = utility:Position(0, (46/2), 0, (40/2), preview_box),
                     Color = Color3.fromRGB(255, 255, 255),
-                    Transparency = 0
+                    Transparency = 1
                 }, window.VisualPreview.Drawings)
                 --
                 do -- Chams
