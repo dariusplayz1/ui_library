@@ -1161,7 +1161,8 @@ do
             local esppreview_frame_previewbox = utility:Create("Frame", {Vector2.new(10,10), esppreview_inner_frame}, {
                 Size = utility:Size(1, -20, 1, -20, esppreview_inner_frame),
                 Position = utility:Position(0, 10, 0, 10, esppreview_inner_frame),
-                Color = Color3.fromRGB(0, 0, 0)
+                Color = Color3.fromRGB(0, 0, 0),
+		Transparency = 0,
             })
             --
             local BoxSize = utility:Size(1, -7, 1, -55, esppreview_frame_previewbox)
@@ -1354,8 +1355,7 @@ do
                 local preview_character = utility:Create("Frame", {Vector2.new(46/2, 40/2), preview_box}, {
                     Size = utility:Size(1, -46, 1, -40, preview_box),
                     Position = utility:Position(0, (46/2), 0, (40/2), preview_box),
-                    Color = Color3.fromRGB(255, 255, 255),
-                    Transparency = 0
+                    Color = Color3.fromRGB(255, 255, 255)
                 }, window.VisualPreview.Drawings)
                 --
                 do -- Chams
