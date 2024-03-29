@@ -1497,6 +1497,7 @@ do
                     Color = Color3.fromRGB(255, 255, 255),
                     OutlineColor = theme.textborder,
                     Center = false,
+		    Visible = false,
                     Position = utility:Position(1, -56, 0, 5, preview_box)
                 }, window.VisualPreview.Drawings)
                 --
@@ -1506,7 +1507,8 @@ do
                     Font = theme.font,
                     Color = Color3.fromRGB(0, 255, 0),
                     OutlineColor = theme.textborder,
-                    Center = false,
+                    Visible = false,
+		    Center = false,
                     Position = utility:Position(0, 0, 0, 5, preview_heatlhbar)
                 }, window.VisualPreview.Drawings);healthvalue = preview_healthbarvalue
                 --
