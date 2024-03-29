@@ -1302,6 +1302,7 @@ do
                     Size = utility:Size(0, 4, 1, 2, preview_boxoutline),
                     Position = utility:Position(0, -6, 0, -1, preview_boxoutline),
                     Color = Color3.fromRGB(0, 0, 0),
+		    Transparency = 0,
                     Filled = true
                 }, window.VisualPreview.Drawings);healthbaroutline = preview_heatlhbaroutline
                 --
@@ -1309,6 +1310,7 @@ do
                     Size = utility:Size(1, -2, 1, -2, preview_heatlhbaroutline),
                     Position = utility:Position(0, 1, 0, 1, preview_heatlhbaroutline),
                     Color = Color3.fromRGB(255, 0, 0),
+		    Transparency = 0,
                     Filled = true
                 }, window.VisualPreview.Drawings);healthbar = preview_heatlhbar
                 --
@@ -1497,7 +1499,7 @@ do
                     Color = Color3.fromRGB(255, 255, 255),
                     OutlineColor = theme.textborder,
                     Center = false,
-		    Visible = false,
+		    Transparency = 0,
                     Position = utility:Position(1, -56, 0, 5, preview_box)
                 }, window.VisualPreview.Drawings)
                 --
@@ -1507,7 +1509,7 @@ do
                     Font = theme.font,
                     Color = Color3.fromRGB(0, 255, 0),
                     OutlineColor = theme.textborder,
-                    Visible = false,
+                    Transparency = 0,
 		    Center = false,
                     Position = utility:Position(0, 0, 0, 5, preview_heatlhbar)
                 }, window.VisualPreview.Drawings);healthvalue = preview_healthbarvalue
