@@ -1353,7 +1353,7 @@ do
                 --
                 do -- Chams
                     for Index = 1, 2 do
-                        local transparency = Index == 1 and 0.75 or 0.5
+                        local transparency = 0
                         local color = Index == 1 and Color3.fromRGB(93, 62, 152) or Color3.fromRGB(255, 255, 255)
                         --
                         local extrasize = Index == 1 and 4 or 0
@@ -1414,7 +1414,7 @@ do
                     for Index = 1, 2 do
                         local skeletonsize = Vector2.new(Index == 1 and 3 or 1, Index == 1 and -10 or -12)
                         local skeletonoffset = Vector2.new(Index == 1 and -1 or 0, Index == 1 and 5 or 6)
-                        local transparency = 0.5
+                        local transparency = 0
                         local color = Index == 1 and Color3.fromRGB(0, 0, 0) or Color3.fromRGB(255, 255, 255)
                         --
                         local preview_skeleton_head = utility:Create("Frame", {Vector2.new((window.VisualPreview.Components.Chams["Head"][2].Size.X * 0.5) + skeletonoffset.X, (window.VisualPreview.Components.Chams["Head"][2].Size.Y * 0.5) + skeletonoffset.Y), window.VisualPreview.Components.Chams["Head"][2]}, {
