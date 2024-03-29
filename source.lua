@@ -2634,7 +2634,12 @@ do
                     x.Visible = true
                 end
             end
-
+	    if window.currentPage.Name == "Visuals" and window and window.VisualPreview then
+		window.VisualPreview:SetPreviewState(true)
+	    else
+		window.VisualPreview:SetPreviewState(false)
+		
+	    end
             --
             window.callback(name, window.currentPage)
             window:Move(window.main_frame.Position)
@@ -2643,12 +2648,7 @@ do
         library.began[#library.began + 1] = function(Input)
             if Input.UserInputType == Enum.UserInputType.MouseButton1 and window.isVisible and utility:MouseOverDrawing({page_button.Position.X,page_button.Position.Y,page_button.Position.X + page_button.Size.X,page_button.Position.Y + page_button.Size.Y}) and window.currentPage ~= page then
                 page:Show()
-	    if page.Text == "Visuals" and window and window.VisualPreview then
-		window.VisualPreview:SetPreviewState(true)
-	    else
-		window.VisualPreview:SetPreviewState(false)
-		print(page.Text)
-	    end
+
             end
         end
         --
