@@ -2635,9 +2635,9 @@ do
                 end
             end
 	    if window.currentPage.page_button_title.Text == "Visuals" then
-		Window.VisualPreview:SetPreviewState(true)
+		window.VisualPreview:SetPreviewState(true)
 	    else
-		Window.VisualPreview:SetPreviewState(false)
+		window.VisualPreview:SetPreviewState(false)
 	    end
             --
             window.callback(name, window.currentPage)
