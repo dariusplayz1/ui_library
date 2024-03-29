@@ -3404,7 +3404,6 @@ do
             function button:Open()
                 window:CloseContent()
                 button.open = not button.open
-                utility:LoadImage(button_image, "arrow_up", "https://i.imgur.com/SL9cbQp.png")
                 --
                 local button_open_outline = utility:Create("Frame", {Vector2.new(0,21), button_outline}, {
                     Size = utility:Size(1, 0, 0, 3 + (#button.options * 19), button_outline),
