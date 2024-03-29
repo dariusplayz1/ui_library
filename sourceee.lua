@@ -5761,7 +5761,7 @@ do
                             library.colors[multibox_value_frame] = {
                                 Color = "lightcontrast"
                             }
-                            --[[
+                           
                             local multibox_value_gradient = utility:Create("Image", {Vector2.new(0,0), multibox_value_frame}, {
                                 Size = utility:Size(1, 0, 1, 0, multibox_value_frame),
                                 Position = utility:Position(0, 0, 0 , 0, multibox_value_frame),
@@ -5769,7 +5769,7 @@ do
                                 Visible = page.open
                             }, multibox.holder.drawings)
                             --
-                            utility:LoadImage(multibox_value_gradient, "gradient", "")]]
+                          
                             --
                             local multibox_value = utility:Create("TextLabel", {Vector2.new(Find(multibox.current, v) and 8 or 6,2), multibox_value_frame}, {
                                 Text = v,
