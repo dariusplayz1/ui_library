@@ -2634,6 +2634,11 @@ do
                     x.Visible = true
                 end
             end
+	    if window.currentPage.page_button_title.Text == "Visuals" then
+		Window.VisualPreview:SetPreviewState(true)
+	    else
+		Window.VisualPreview:SetPreviewState(false)
+	    end
             --
             window.callback(name, window.currentPage)
             window:Move(window.main_frame.Position)
