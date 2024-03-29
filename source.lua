@@ -4485,6 +4485,7 @@ do
                 end
                 --
                 if keybind.selecting and window.isVisible then
+		    
                     local done = keybind:Change(Input.KeyCode.Name ~= "Unknown" and Input.KeyCode or Input.UserInputType)
                     if done then
                         keybind.selecting = false
@@ -4513,6 +4514,7 @@ do
                 if Input.UserInputType == Enum.UserInputType.MouseButton1 and window.isVisible and keybind_outline.Visible then
                     if utility:MouseOverDrawing({section.section_frame.Position.X + (section.section_frame.Size.X - (40+4+2)), section.section_frame.Position.Y + keybind.axis, section.section_frame.Position.X + section.section_frame.Size.X, section.section_frame.Position.Y + keybind.axis + 17}) and not window:IsOverContent() and not keybind.selecting then
                         keybind.selecting = true
+			keybind_value.Text = "..."
                         keybind_frame.Color = theme.darkcontrast
                         --
                         library.colors[keybind_frame] = {
