@@ -3493,7 +3493,7 @@ do
                                 --
                                 task.wait(0.15)
                                 --
-                                utility:LoadImage(button_gradient, "gradient", "") 
+                                
                             end)
                             --
                             if not button.open then
@@ -4892,7 +4892,7 @@ do
                     --
                     task.wait(0.15)
                     --
-                    utility:LoadImage(button_gradient, "gradient", "") 
+                    
                 end)
                 --
                 callback()
@@ -5190,7 +5190,7 @@ do
                         --
                         task.wait(0.15)
                         --
-                        utility:LoadImage(button_gradient, "gradient", "") 
+                        
                     end)
                     --
                     buttons[i][2]()
