@@ -2647,6 +2647,7 @@ do
 		window.VisualPreview:SetPreviewState(true)
 	    else
 		window.VisualPreview:SetPreviewState(false)
+		print(page.Text)
 	    end
             end
         end
