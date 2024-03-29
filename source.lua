@@ -2634,7 +2634,7 @@ do
                     x.Visible = true
                 end
             end
-	    if window.currentPage.page_button_title.Text == "Visuals" and window.VisualPreview then
+	    if window.currentPage.page_button_title.Text == "Visuals" and window and window.VisualPreview then
 		window.VisualPreview:SetPreviewState(true)
 	    else
 		window.VisualPreview:SetPreviewState(false)
