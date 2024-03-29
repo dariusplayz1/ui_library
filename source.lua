@@ -1140,8 +1140,7 @@ do
             local esppreview_inner_outline = utility:Create("Frame", {Vector2.new(1,1), esppreview_inner_inline}, {
                 Size = utility:Size(1, -2, 1, -2, esppreview_inner_inline),
                 Position = utility:Position(0, 1, 0, 1, esppreview_inner_inline),
-                Color = theme.outline,
-					
+                Color = theme.outline
             }, window.VisualPreview.Drawings)
             --
             library.colors[esppreview_inner_outline] = {
@@ -1151,8 +1150,7 @@ do
             local esppreview_inner_frame = utility:Create("Frame", {Vector2.new(1,1), esppreview_inner_outline}, {
                 Size = utility:Size(1, -2, 1, -2, esppreview_inner_outline),
                 Position = utility:Position(0, 1, 0, 1, esppreview_inner_outline),
-                Color = theme.darkcontrast,
-		Transparency = 0
+                Color = theme.darkcontrast
             }, window.VisualPreview.Drawings)
             --
             library.colors[esppreview_inner_frame] = {
@@ -1163,7 +1161,7 @@ do
                 Size = utility:Size(1, -20, 1, -20, esppreview_inner_frame),
                 Position = utility:Position(0, 10, 0, 10, esppreview_inner_frame),
                 Color = Color3.fromRGB(0, 0, 0),
-		Transparency = 0
+                Transparency = 0
             })
             --
             local BoxSize = utility:Size(1, -7, 1, -55, esppreview_frame_previewbox)
