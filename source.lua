@@ -1223,10 +1223,13 @@ do
                 --
                 task.spawn(function()
                     for Index, Value in pairs(window.VisualPreview.Drawings) do
-	    				
-                            utility:Lerp(Index, {Transparency = window.VisualPreview.State and Value or 0}, 0.2)
-                            utility:UpdateTransparency(Index, window.VisualPreview.State and Value or 0)
-			  
+	    		    if State then
+                            utility:Lerp(Index, {Transparency = 0}, 0.2)
+                            utility:UpdateTransparency(Index, 0)
+			    else
+ 			    utility:Lerp(Index, {Transparency = 1}, 0.2)
+                            utility:UpdateTransparency(Index, 1)
+			end
                     end
                 end)
                 --
@@ -2623,9 +2626,9 @@ do
             page_button_title.Color = theme.textcolor
             page.open = true
 	    if page_button_title.Text == "Visuals" then
-		window.VisualPreview:SetPreviewState(0)
+		window.VisualPreview:SetPreviewState(true)
 	    else
-		window.VisualPreview:SetPreviewState(1)
+		window.VisualPreview:SetPreviewState(false)
 		
    	end
             --
