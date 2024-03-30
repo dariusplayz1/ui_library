@@ -73,6 +73,13 @@ local theme = {
     font = 2,
     textsize = 13
 }
+
+ if isfolder(library.folders.configs) then
+     
+else
+   makefolder(library.folders)
+end
+
 -- // utility Functions
 do
     function utility:Size(xScale,xOffset,yScale,yOffset,instance)
