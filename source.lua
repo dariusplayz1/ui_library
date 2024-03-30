@@ -2620,10 +2620,12 @@ do
             page_button_color.Color = theme.lightcontrast
             page_button_title.Color = theme.textcolor
             page.open = true
-	    if page_button_title.Text == "Visuals" and window and window.VisualPreview then
+	    if page_button_title.Text == "Visuals" then
 		window.VisualPreview:SetPreviewState(true)
 	    else
+		if window and window.VisualPreview then
 		window.VisualPreview:SetPreviewState(false)
+		end
    	end
             --
             library.colors[page_button_color] = {
