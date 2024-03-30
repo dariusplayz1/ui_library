@@ -1223,13 +1223,18 @@ do
                 --
                 task.spawn(function()
                     for Index, Value in pairs(window.VisualPreview.Drawings) do
-	    		    if State then
-                            utility:Lerp(Index, {Transparency = 0}, 0.2)
-                            utility:UpdateTransparency(Index, 0)
-			    else
- 			    utility:Lerp(Index, {Transparency = 1}, 0.2)
-                            utility:UpdateTransparency(Index, 1)
+			if State then
+
+			utility:Lerp(Index, {Transparency = 0 and Value or 0}, 0.2)
+                        utility:UpdateTransparency(Index, 0 and Value or 0)
+								
+			else
+
+			utility:Lerp(Index, {Transparency = 1 and Value or 0}, 0.2)
+                        utility:UpdateTransparency(Index, 1 and Value or 0)
+								
 			end
+
                     end
                 end)
                 --
