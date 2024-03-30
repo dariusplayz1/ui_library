@@ -2638,6 +2638,7 @@ do
 		if window and window.VisualPreview then
 		window.VisualPreview:SetPreviewState(false)
 		end
+            end
             --
             window.callback(name, window.currentPage)
             window:Move(window.main_frame.Position)
