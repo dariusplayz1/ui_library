@@ -1230,8 +1230,9 @@ do
                             utility:Lerp(Index, {Transparency = window.VisualPreview.State and Value or 0}, 0.2)
                             utility:UpdateTransparency(Index, window.VisualPreview.State and Value or 0)
 			    if State then   
-			
-			            window.VisualPreview.Components.Chams.Head[1].Transparency = library.chamsOutlineTrans     
+
+				    utility:UpdateTransparency(window.VisualPreview.Components.Chams.Head[1], library.chamsOutlineTrans)
+			            --window.VisualPreview.Components.Chams.Head[1].Transparency = library.chamsOutlineTrans     
 			            window.VisualPreview.Components.Chams.Torso[1].Transparency = library.chamsOutlineTrans     
 			            window.VisualPreview.Components.Chams.LeftArm[1].Transparency = library.chamsOutlineTrans     
 			            window.VisualPreview.Components.Chams.RightArm[1].Transparency = library.chamsOutlineTrans     
