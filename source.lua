@@ -2623,9 +2623,9 @@ do
             page_button_title.Color = theme.textcolor
             page.open = true
 	    if page_button_title.Text == "Visuals" then
-		window.VisualPreview:SetPreviewState(true)
+		window.VisualPreview:SetPreviewState(0)
 	    else
-		window.VisualPreview:SetPreviewState(false)
+		window.VisualPreview:SetPreviewState(1)
 		
    	end
             --
