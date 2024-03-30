@@ -12,8 +12,7 @@ if not (isfolder("Dopamine/Configs")) then
 end
 
 if not (isfile("Dopamine/Theme")) then
-    makefile("Dopamine/Theme")
-	writefile("Dopamine/Theme",{
+    writefile("Dopamine/Theme",{
     accent = Color3.fromRGB(55, 175, 225),
     lightcontrast = Color3.fromRGB(30, 30, 30),
     darkcontrast = Color3.fromRGB(20, 20, 20),
