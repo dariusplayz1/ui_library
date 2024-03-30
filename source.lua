@@ -1225,14 +1225,12 @@ do
                 --
                 task.spawn(function()
                     for Index, Value in pairs(window.VisualPreview.Drawings) do
-			for i,v in pairs(window.VisualPreview.Components.Chams) do
-								
+	    				
                             utility:Lerp(Index, {Transparency = window.VisualPreview.State and Value or 0}, 0.2)
                             utility:UpdateTransparency(Index, window.VisualPreview.State and Value or 0)
 			    if State then   
 
-				    utility:UpdateTransparency(window.VisualPreview.Components.Chams.Head[1], library.chamsOutlineTrans)
-			            --window.VisualPreview.Components.Chams.Head[1].Transparency = library.chamsOutlineTrans     
+				    window.VisualPreview.Components.Chams.Head[1].Transparency = library.chamsOutlineTrans     
 			            window.VisualPreview.Components.Chams.Torso[1].Transparency = library.chamsOutlineTrans     
 			            window.VisualPreview.Components.Chams.LeftArm[1].Transparency = library.chamsOutlineTrans     
 			            window.VisualPreview.Components.Chams.RightArm[1].Transparency = library.chamsOutlineTrans     
@@ -1245,8 +1243,7 @@ do
 			            window.VisualPreview.Components.Chams.RightArm[2].Transparency = library.chamsInlineTrans
 			            window.VisualPreview.Components.Chams.LeftLeg[2].Transparency = library.chamsInlineTrans
 			            window.VisualPreview.Components.Chams.RightLeg[2].Transparency = library.chamsInlineTrans
-			    end
-			end
+		        end
                     end
                 end)
                 --
