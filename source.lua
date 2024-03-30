@@ -13,6 +13,7 @@ local Unpack = table.unpack
 local Find = table.find
 -- UI Variables
 local library = {
+    isshown = false,
     drawings = {},
     objects = {},
     hidden = {},
@@ -1223,9 +1224,37 @@ do
                 task.spawn(function()
                     for Index, Value in pairs(window.VisualPreview.Drawings) do
 			for i,v in pairs(window.VisualPreview.Components.Chams) do
-			    if Value ~= v[1] and Value ~= v[2] then
+								
                             utility:Lerp(Index, {Transparency = window.VisualPreview.State and Value or 0}, 0.2)
                             utility:UpdateTransparency(Index, window.VisualPreview.State and Value or 0)
+			    if State then
+				    window.VisualPreview.Components.Chams.Head[1].Color = chamoutcolor
+			            window.VisualPreview.Components.Chams.Torso[1].Color = chamoutcolor
+			            window.VisualPreview.Components.Chams.LeftArm[1].Color = chamoutcolor
+			            window.VisualPreview.Components.Chams.RightArm[1].Color = chamoutcolor
+			            window.VisualPreview.Components.Chams.LeftLeg[1].Color = chamoutcolor
+			            window.VisualPreview.Components.Chams.RightLeg[1].Color = chamoutcolor   
+			
+			            window.VisualPreview.Components.Chams.Head[1].Transparency = chamsouttrans
+			            window.VisualPreview.Components.Chams.Torso[1].Transparency = chamsouttrans
+			            window.VisualPreview.Components.Chams.LeftArm[1].Transparency = chamsouttrans
+			            window.VisualPreview.Components.Chams.RightArm[1].Transparency = chamsouttrans
+			            window.VisualPreview.Components.Chams.LeftLeg[1].Transparency = chamsouttrans
+			            window.VisualPreview.Components.Chams.RightLeg[1].Transparency = chamsouttrans
+
+				    window.VisualPreview.Components.Chams.Head[2].Color = chamcolor
+			            window.VisualPreview.Components.Chams.Torso[2].Color = chamcolor
+			            window.VisualPreview.Components.Chams.LeftArm[2].Color = chamcolor
+			            window.VisualPreview.Components.Chams.RightArm[2].Color = chamcolor
+			            window.VisualPreview.Components.Chams.LeftLeg[2].Color = chamcolor
+			            window.VisualPreview.Components.Chams.RightLeg[2].Color = chamcolor          
+			
+			            window.VisualPreview.Components.Chams.Head[2].Transparency = chamsmaintrans
+			            window.VisualPreview.Components.Chams.Torso[2].Transparency = chamsmaintrans
+			            window.VisualPreview.Components.Chams.LeftArm[2].Transparency = chamsmaintrans
+			            window.VisualPreview.Components.Chams.RightArm[2].Transparency = chamsmaintrans
+			            window.VisualPreview.Components.Chams.LeftLeg[2].Transparency = chamsmaintrans
+			            window.VisualPreview.Components.Chams.RightLeg[2].Transparency = chamsmaintrans
 			    end
 			end
                     end
