@@ -1239,11 +1239,11 @@ do
 			            window.VisualPreview.Components.Chams.RightLeg[1].Transparency = library.chamsOutlineTrans          
 			
 			            window.VisualPreview.Components.Chams.Head[2].Transparency = library.chamsInlineTrans
-			            window.VisualPreview.Components.Chams.Torso[2].Transparency = chamsInlineTrans
-			            window.VisualPreview.Components.Chams.LeftArm[2].Transparency = chamsInlineTrans
-			            window.VisualPreview.Components.Chams.RightArm[2].Transparency = chamsInlineTrans
-			            window.VisualPreview.Components.Chams.LeftLeg[2].Transparency = chamsInlineTrans
-			            window.VisualPreview.Components.Chams.RightLeg[2].Transparency = chamsInlineTrans
+			            window.VisualPreview.Components.Chams.Torso[2].Transparency = library.chamsInlineTrans
+			            window.VisualPreview.Components.Chams.LeftArm[2].Transparency = library.chamsInlineTrans
+			            window.VisualPreview.Components.Chams.RightArm[2].Transparency = library.chamsInlineTrans
+			            window.VisualPreview.Components.Chams.LeftLeg[2].Transparency = library.chamsInlineTrans
+			            window.VisualPreview.Components.Chams.RightLeg[2].Transparency = library.chamsInlineTrans
 			    end
 			end
                     end
