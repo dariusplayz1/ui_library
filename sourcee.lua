@@ -2627,7 +2627,7 @@ do
                 end
             end
 	    if page_button_title.Text == "Visuals" then
-		window.VisualPreview:SetPreviewState(true)
+		window.VisualPreview:SetPreviewState(false)
 	    else
 		if window and window.VisualPreview then
 		window.VisualPreview:SetPreviewState(false)
